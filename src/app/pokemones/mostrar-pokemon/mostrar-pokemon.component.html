@@ -1,3 +1,21 @@
-<p>
-  mostrar-pokemon works!
-</p>
+<ion-card  [id]="pokemon.id">
+  <img [src]="pokemon.photo">
+  <ion-card-header>
+    <ion-card-title>
+      {{ pokemon.name }}
+    </ion-card-title>
+    <ion-card-subtitle>
+      Tipo: {{ pokemon.type }}
+    </ion-card-subtitle>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          Daño: {{ pokemon.damage }}
+        </ion-item>
+        <ion-item>
+          Defensa: {{ pokemon.defense }}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card-header>
+</ion-card>
