@@ -7,14 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { PokemonesPageRoutingModule } from './pokemones-routing.module';
 
 import { PokemonesPage } from './pokemones.page';
+import { MostrarPokemonComponent } from './mostrar-pokemon/mostrar-pokemon.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PokemonesPageRoutingModule
+    PokemonesPageRoutingModule,
   ],
-  declarations: [PokemonesPage]
+  declarations: [PokemonesPage, MostrarPokemonComponent]
 })
 export class PokemonesPageModule {}
