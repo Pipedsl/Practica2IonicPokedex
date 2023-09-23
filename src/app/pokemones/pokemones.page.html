@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <br/>
+    <ion-title>pokemones</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card  *ngFor="let poke of pokemones" [id]="poke.id">
+    <img [src]="poke.photo">
+    <ion-card-header>
+      <ion-card-title>
+        {{ poke.name }}
+      </ion-card-title>
+      <ion-card-subtitle>
+        Tipo: {{ poke.type }}
+      </ion-card-subtitle>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            Daño: {{ poke.damage }}
+          </ion-item>
+          <ion-item>
+            Defensa: {{ poke.defense }}
+          </ion-item>
+        </ion-list>
+        
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
